@@ -1,0 +1,190 @@
+* {
+  float: none;
+	position: static;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.main {
+  font-size: 1.2rem;
+  width: 100vw;
+  height: 100vh;
+    /* グラデーション */
+  background: linear-gradient(to right, rgb(217, 98, 211), rgb(69, 185, 185));
+  /* background: url("/Users/Horikome_work/Project of Sumire/kasper-html5/sumire's circle project/images/metxa.png") no-repeat scroll 0 0 transparent; */
+  
+  overflow: hidden;
+  position: relative;
+}
+
+nav {
+  width: 80%;
+  display: flex;
+  z-index: 1;
+  margin: 20px auto;
+  position: sticky;
+  align-items: center;
+  font-weight: 550;
+}
+
+.logo-area {
+  flex-basis: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 20%;
+  height: 20%;
+  margin-right: 12px;
+}
+
+
+.nav-links {
+  flex: 1; /* 空いてるスペースの余白を強制的に入れてる。flex-growと同じ。 */
+  text-align: right; /* インライン要素だから右寄せできる。a */
+}
+
+.nav-links ul {
+  list-style: none;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  padding: 0 2rem;
+}
+
+.nav-links ul a {
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* マウスホバー時文字の色変化、拡大 */
+.nav-links ul a:hover{
+  display: inline-block;
+  transition: all .3s ease 0s;
+	text-decoration: none;
+  color: rgb(183, 236, 223);
+  cursor: pointer;
+	transform: scale(1.2);
+}
+
+.infomation {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+}
+
+#circle {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  /* background: #ccc; */
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+
+.feature img {
+  width: 70px;
+}
+
+.feature {
+  position: absolute;
+  display: flex;
+  color: #fff;
+}
+
+.feature div {
+  margin-left: 20px;
+}
+
+.feature div a {
+  margin-top: 8px;
+}
+
+.one {
+  top: 450px;
+  right: 70px;
+}
+
+.two {
+  top: 100px;
+  left: 340px;
+  transform: rotate(-90deg);
+}
+
+.three {
+  bottom: 450px;
+  left: 50px;
+  transform: rotate(-180deg);
+
+}
+
+.four {
+  bottom: 150px;
+  right: 370px;
+  transform: rotate(-270deg);
+
+}
+
+.mobile {
+  width: 400px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 27%;
+}
+
+.control {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.control img {
+  width: 15px;
+}
+
+.control h3 {
+  margin: 20px 0;
+  color: #fff;
+}
+
+#upBtn {
+  cursor: pointer;
+}
+
+#downBtn {
+  cursor: pointer;
+  transform: rotate(-180deg);
+}
+
+.overlay {
+  width: 0;
+  height: 0;
+  border-top: 500px solid #fff;
+  border-right: 500px solid transparent;
+  border-bottom: 500px solid #fff;
+  border-left: 500px solid #fff;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
